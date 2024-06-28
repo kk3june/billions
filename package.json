@@ -1,0 +1,30 @@
+{
+  "name": "billions",
+  "version": "1.0.0",
+  "description": "NextJS practice project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kk3june/billions.git"
+  },
+  "keywords": [],
+  "author": "kk3june",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kk3june/billions/issues"
+  },
+  "homepage": "https://github.com/kk3june/billions#readme",
+  "dependencies": {
+    "next": "^14.2.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.9",
+    "@types/react": "18.3.3",
+    "typescript": "5.5.2"
+  }
+}
