@@ -1,0 +1,30 @@
+body {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: black;
+}
+
+.billionaire_list {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.billionaire_wrapper {    
+    width: 13rem;
+    height: 18rem;
+    text-decoration: none;
+    color: white;
+    img {
+        width: 100%;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        padding: 0;
+        li:nth-of-type(2) {
+            font-size: 0.9rem;
+        }
+    }
+}
