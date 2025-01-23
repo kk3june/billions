@@ -1,18 +1,22 @@
+'use client'
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const API_URL = "https://billions-api.nomadcoders.workers.dev/"
 
-async function getBillions() {
-  return fetch(API_URL).then(res => res.json())
-}
-
-async function Home() {
-  const billions = await getBillions();
+function Home() {
+  const [billions, setBillions] = useState([]);
+  
+  useEffect(() => {
+    fetch(API_URL)
+      .then(res => res.json())
+      .then(data => setBillions(data));
+  }, []);
 
   return (
     <div className='billionaire_list'>
       {billions.map(it => (
-        <Link href={`person/${it.id}`} className='billionaire_wrapper'>
+        <Link href={`person/${it.id}`} className='billionaire_wrapper' key={it.id}>
           <img src={it.squareImage} />
           <ul>
             <li>
